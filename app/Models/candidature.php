@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class candidature extends Model
+{
+    use HasFactory;
+    protected $table = 'candidatures';
+    protected $fillable =
+    [
+        'user_id',
+        'user_name',
+        'trv_id',
+        'nom',
+        'prenom',
+        'date_de_naissanse',
+        'diplome_formation',
+        'adresse',
+        'nom_wilaya',
+        'numero_de_telephone',
+        'adresse_email',
+        'cv',
+        'approuvé',
+        'genre',
+        'intitule',
+    ];
+}
